@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 The Android Open Source Project
+<!-- Copyright (C) 2009 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,11 +14,10 @@
      limitations under the License.
 -->
 
-<!-- Telecomm resources that may need to be customized
-     for different hardware or product builds. -->
-<resources>
-
-    <!-- Flag indicating if the tty is enabled -->
-    <bool name="tty_enabled">true</bool>
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds.  Do not translate. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
 
 </resources>

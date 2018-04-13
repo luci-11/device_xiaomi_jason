@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Discovery stuff.
-$(call inherit-product, vendor/discovery/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from jason device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -36,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := jason
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := discovery_jason
+PRODUCT_NAME := lineage_jason
 PRODUCT_MODEL := Mi Note 3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

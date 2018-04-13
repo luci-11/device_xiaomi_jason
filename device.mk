@@ -18,8 +18,11 @@
 $(call inherit-product, vendor/xiaomi/jason/jason-vendor.mk)
 $(call inherit-product, device/xiaomi/jason/permissions.mk)
 
+
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -122,10 +125,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libqdMetaData \
     libqdMetaData.system
-
-# Doze
-#PRODUCT_PACKAGES += \
-#    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -265,8 +264,8 @@ PRODUCT_PACKAGES += \
     rcs_service_api.xml
 
 # Recovery
-#PRODUCT_PACKAGES += \
-#    librecovery_updater_jason
+PRODUCT_PACKAGES += \
+    librecovery_updater_jason
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
